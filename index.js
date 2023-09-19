@@ -27,6 +27,7 @@ app.post("/login", (req, res)=>{
     res.status(200).send(req.body)
 })
 
-app.listen(8090,()=>{
-    console.log("Express Server is listing on port http://localhost:8090");
+const port = 8090;
+app.listen(port,()=>{
+    console.log(`Express Server is listing on port http://localhost:${port}`);
 })
